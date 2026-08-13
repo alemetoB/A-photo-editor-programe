@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.editor {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.toolbar {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  background: #2b2b2b;
+  padding: 20px 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.toolbar-item {
+  margin-bottom: 18px;
+}
+
+.file-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.file-picker label {
+  font-weight: 600;
+}
+
+.tool-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.range-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tool-input {
+  flex: 1;
+  width: 100%;
+  cursor: pointer;
+}
+
+.value-label {
+  display: inline-block;
+  min-width: 52px;
+  text-align: right;
+  font-size: 12px;
+  color: #ddd;
+  font-weight: 600;
+}
+
+.toolbar-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.toolbar-actions button {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #4a90e2;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.toolbar-actions button:hover {
+  background: #3677c9;
+}
+
+
+
+
+
+
+
+
+.image-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #3b3b3b, #1d1d1d);
+}
+
+#canvas {
+  display: block;
+  max-width: 100%;
+  max-height: 80vh;
+  width: 700px;
+  height: 500px;
+  background: #111;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}

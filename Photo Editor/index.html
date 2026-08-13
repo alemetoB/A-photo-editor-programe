@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="editor">
+      <aside class="toolbar">
+        <div class="toolbar-item file-picker">
+          <label for="imageFileInput">Choose Photo</label>
+          <input type="file" id="imageFileInput" accept="image/*" />
+        </div>
+
+        <div class="toolbar-item">
+          <label class="tool-label" for="brightness">Brightness</label>
+          <div class="range-row">
+            <input class="tool-input" type="range" id="brightness" min="0" max="200" value="100" />
+            <span class="value-label" data-for="brightness">100%</span>
+          </div>
+        </div>
+
+        <div class="toolbar-item">
+          <label class="tool-label" for="saturation">Saturation</label>
+          <div class="range-row">
+            <input class="tool-input" type="range" id="saturation" min="0" max="200" value="100" />
+            <span class="value-label" data-for="saturation">100%</span>
+          </div>
+        </div>
+
+        <div class="toolbar-item">
+          <label class="tool-label" for="blur">Blur</label>
+          <div class="range-row">
+            <input class="tool-input" type="range" id="blur" min="0" max="25" value="0" />
+            <span class="value-label" data-for="blur">0px</span>
+          </div>
+        </div>
+
+        <div class="toolbar-item">
+          <label class="tool-label" for="inversion">Inversion</label>
+          <div class="range-row">
+            <input class="tool-input" type="range" id="inversion" min="0" max="100" value="0" />
+            <span class="value-label" data-for="inversion">0%</span>
+          </div>
+        </div>
+
+        <div class="toolbar-actions">
+          <button id="resetBtn" type="button">Reset</button>
+          <button id="downloadBtn" type="button">Download</button>
+        </div>
+      </aside>
+
+      <main class="image-area">
+        <canvas id="canvas" width="700" height="500"></canvas>
+      </main>
+    </div>
+  </body>
+</html>
